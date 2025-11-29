@@ -27,22 +27,16 @@
     <div class="posts mt-20">
         <h3 class="text-zinc-400">Your post</h3>
         <div class="postContainer mt-5">
-          <div class="post w-1/3 mb-4 p-4 rounded-md bg-zinc-800 border-[1px] border-zinc-700">
-            <h4 class="text-blue-500 mb-2">@someusername</h4>
-            <p class="text-sm tracking-tight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ad debitis ab, hic eveniet consequuntur architec to sit excepturi sequi harum voluptatibus corrupti incidunt tempora non at error nemo veritatis? Maiores.</p>
+         <% user.posts.reverse().forEach(function(post){ %>
+          <div class="post w-1/3 p-4 mb-4 rounded-md border-[1px] border-zinc-700 bg-zinc-800">
+            <h4 class="text-blue-500 mb-2">@<%= user.username %></h4>
+            <p class="text-sm tracking-tight"><%= post.content %></p>
             <div class="btns flex gap-4 mt-5">
               <a href="" class="text-blue-500">Like</a>
-              <a href="" class="text-zinc-600 ">Edit</a>
+              <a href="" class="text-zinc-600">Edit</a>
             </div>
-          </div>
-           <div class="post w-1/3 mb-4 p-4 rounded-md bg-zinc-800 border-[1px] border-zinc-700">
-            <h4 class="text-blue-500 mb-2">@someusername</h4>
-            <p class="text-sm tracking-tight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ad debitis ab, hic eveniet consequuntur architec to sit excepturi sequi harum voluptatibus corrupti incidunt tempora non at error nemo veritatis? Maiores.</p>
-            <div class="btns flex gap-4 mt-5">
-              <a href="" class="text-blue-500">Like</a>
-              <a href="" class="text-zinc-600 ">Edit</a>
-            </div>
-          </div>
+          </div>        
+      <%   }) %>
         </div>
     </div>
     </div>
