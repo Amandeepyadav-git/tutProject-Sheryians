@@ -9,11 +9,7 @@
   <body>
     <div class="w-full min-h-screen bg-zinc-900 text-white p-10">
       <div class="w-full flex justify-end">
-        <a
-          class="bg-red-500 rounded-md px-3 py-2 text-sm mb-5 inline-block"
-          href="/logout"
-          >Logout</a
-        >
+        <a class="bg-red-500 rounded-md px-3 py-2 text-sm mb-5 inline-block" href="/logout">Logout</a>
       </div>
       <div class="flex items-start gap-3">
         <div class="w-10 h-10 rounded-md">
@@ -46,9 +42,9 @@
           >
             <h4 class="text-blue-500 mb-2">@<%= user.username %></h4>
             <p class="text-sm tracking-tight"><%= post.content %></p>
-            <small class="mt-2 inline-block"
-              ><%= (post.likes || []).length %> likes</small
-            >
+            <small class="mt-2 inline-block">
+              <%= (post.likes || []).length %> likes
+            </small>
             <div class="btns flex gap-4 mt-1">
               <a href="/like/<%= post._id %>" class="text-blue-500">
                 <% var liked = (post.likes || []).some(function(id){ return
