@@ -1,8 +1,0 @@
-login and register
-logout
-users can write posts
-post creation
-post like
-user can perform CRUD operations on posts
-multiple users can be created
-users can update their profile picture
