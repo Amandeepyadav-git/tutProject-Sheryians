@@ -5,7 +5,7 @@ Node.js social platform with JWT auth, user posts, likes, and profile picture up
 ## Features
 
 **Authentication**
-- JWT-based auth with cookies
+- JWT-based auth with cookies on page
 - Bcrypt password hashing
 - Protected routes via middleware
 
